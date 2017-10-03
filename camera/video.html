@@ -1,0 +1,49 @@
+<link href="camera.css">
+<script type='text/javascript' src='http://localhost/iranshargh-clever.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://localhost/iranshargh-clever.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='camera.min.js'></script>
+<script type='text/javascript' src='jquery.mobile.customized.min.js'></script>
+<script type='text/javascript' src='jquery.easing.1.3.js'></script>
+
+
+<div id="back_to_camera">
+    <a href="http://www.pixedelic.com/plugins/camera/">&larr; Back to the Camera project</a>
+</div><!-- #back_to_camera -->
+
+<div class="fluid_container">
+    <p>Videos, HTML elements and data- attributes</p>
+    <div class="camera_wrap camera_emboss" id="camera_wrap_3">
+        <div data-thumb="http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/slides/thumbs/big_bunny_fake.jpg" data-src="http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/slides/big_bunny_fake.jpg">
+            <style>.h_iframe-aparat_embed_frame{position:relative;} .h_iframe-aparat_embed_frame .ratio {display:block;width:100%;height:auto;} .h_iframe-aparat_embed_frame iframe {position:absolute;top:0;left:0;width:100%; height:100%;}</style><div class="h_iframe-aparat_embed_frame"> <span style="display: block;padding-top: 57%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/xIyql/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" ></iframe></div>
+        </div>
+        <div data-thumb="http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/slides/thumbs/leaf.jpg" data-src="http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/slides/leaf.jpg">
+            <div style="position:absolute; top:5%; left:5%; background:#000; color:#fff; padding:5px; width:25%" class="fadeIn camera_effected">This is an HTML element included in the transition effect</div>
+        </div>
+        <div data-thumb="http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/slides/thumbs/road.jpg" data-src="http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/slides/road.jpg" data-time="1500" data-trasPeriod="4000" data-target="_blank">
+            <div class="camera_caption fadeFromBottom">
+                Changed the time and the transition time of this slide
+            </div>
+        </div>
+    </div><!-- #camera_wrap_3 -->
+
+</div><!-- .fluid_container -->
+
+<div style="clear:both; display:block; height:100px"></div>
+
+
+
+<script>
+    jQuery(function(){
+
+        jQuery('#camera_wrap_3').camera({
+            height: '56%',
+            loader: 'bar',
+            pagination: false,
+            thumbnails: true,
+            imagePath: '../images/',
+            time: 4500
+        });
+
+    });
+</script>
+
